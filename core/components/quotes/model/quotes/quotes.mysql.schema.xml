@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="quotes" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" version="1.0">
+	<object class="Quote" table="quotes" extends="xPDOSimpleObject">
+		<field key="quote" dbtype="text" phptype="string" null="false" />
+		<field key="author" dbtype="varchar" precision="255" phptype="string" null="false" />
+		<field key="modified" dbtype="timestamp" phptype="timestamp" null="false" default="CURRENT_TIMESTAMP"  extra="on update current_timestamp" />
+		<field key="modified_by" dbtype="int" precision="11" phptype="integer" null="false" />
+		
+		<aggregate alias="Editor" class="modUser" local="modified_by" foreign="id" cardinality="one" owner="foreign" />
+	</object>
+</model>

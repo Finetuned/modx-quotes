@@ -1,0 +1,6 @@
+Changelog file for Quotes component.
+Please see https://github.com/vundicind/modx-quotes for full commit history
+
+Quotes 1.0
+=======================================
+- Packaged for transport
