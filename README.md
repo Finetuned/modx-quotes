@@ -1,7 +1,7 @@
 modx-quotes
 ===========
 
-MODX Aphorisms
+MODX Quotes
 
 Credits
 -------
