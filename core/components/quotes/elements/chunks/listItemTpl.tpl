@@ -1,5 +1,7 @@
-<div>
-	<a name="[[+anchor]]"></a>
-	<strong class="quotes-quote">[[+quote]]</strong>
-	<p class="quotes-author">[[+author]]</p>
-</div>
+<blockquote>
+    <a name="[[+anchor]]"></a>
+    <p>[[+quote]]</p>
+    <footer>
+        — <cite>[[+author]]</cite>
+    </footer>
+</blockquote>
