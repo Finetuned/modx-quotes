@@ -15,7 +15,7 @@ Quotes.grid.Quotes = function(config) {
             header: _('quotes.quote')
             ,dataIndex: 'quote'
             ,sortable: true
-            ,width: 30
+            ,width: 100
             ,editor: { xtype: 'textarea' }
             ,renderer: function(quote){
             		return '<h3 style="padding:0;margin:0;">'+quote+'</h3>';
@@ -24,7 +24,7 @@ Quotes.grid.Quotes = function(config) {
             header: _('quotes.author')
             ,dataIndex: 'author'
             ,sortable: true
-            ,width: 100
+            ,width: 30
             ,editor: { xtype: 'textfield' }
         }]
         ,tbar:[{
