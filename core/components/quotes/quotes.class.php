@@ -51,6 +51,23 @@ public function getQuotes(){
 		};
 		return $retArray;
 	}//
+
+
+
+
+public function getRandomQuote(){
+	$c = $this->modx->newQuery('Quote');
+	$c->limit(1);
+	$c->sortby('rand()', '');
+
+	$quotes = $this->modx->getCollection('Quote', $c);
+	$retArray = array();
+	foreach($quotes as $quote){
+		$retArray[] = $quote->toArray();
+	};
+	
+	return $retArray;
+	}//
 	
 	
 	
